@@ -27,5 +27,48 @@ select:focus,
 input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-secondary);
   border: 0.125rem solid var(--stroke-highlight);
-  outline-offset: 0.1px;
+  outline-offset: .1px;
+}
+
+/* input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/icons/calendar-03.svg);
+    right: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+  }
+}
+
+select {
+  background: url(../../assets/icons/arrowdown-01.svg) no-repeat calc(100% - 1rem);
+  padding-right: 2.5rem;
+} */
+
+.address .flex {
+  gap: 1.5rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
+
+  input {
+    &[disabled] {
+      background-color: var(--surface-disabled);
+
+      border: 1px solid var(--stroke-default);
+
+      color: var(--text-primary);
+    }
+  }
 }
