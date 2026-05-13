@@ -97,5 +97,5 @@ input {
 
   &:not(:focus):valid + .error {
     display: none;
-  } /*n ta funcionando*/
+  }
 }
