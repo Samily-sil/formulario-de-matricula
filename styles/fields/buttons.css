@@ -9,5 +9,21 @@ button {
     &.btn-primary {
         color: white;
         background-color: #e43a12;
+
+        &:hover,
+        &:focus {
+            background-color: #f3541c;
+        }
+    }
+
+    &.btn-secondary {
+        margin-left: auto;
+        border: 1px solid var(--text-highlight);
+
+        &:hover,
+        &:focus {
+            color: #e43a12;
+            outline: .25rem solid var(--surface-secondary);
+        }
     }
 }
